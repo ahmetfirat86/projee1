@@ -18,7 +18,7 @@ headers = {
 }
 
 
-def create_tweet(text, media_id=None):
+def create_tweet(text, media_id=None):#tweetin oluşturulması 
     payload = {
         "text": text
         }
