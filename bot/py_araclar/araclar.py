@@ -77,12 +77,7 @@ def get_video_properties(video_path):
 def get_frame(video_path,de):
     cap = cv2.VideoCapture(video_path)
 
-    try:
-        if not os.path.exists("frameler"):
-            os.makedirs("frameler")
-    except OSError:
-        print("Dosya oluşturulamadı")
-
+    
     currentFrame=0
 
     while(True):

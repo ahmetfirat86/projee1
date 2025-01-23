@@ -16,9 +16,9 @@ def post_tweet():
         print(f"Tweet posted with image {image_path}")
     except Exception as e:
         print(f"Error posting tweet with image {image_path}: {e}")
+  
 
-
-schedule.every(1).minutes.do(post_tweet)
+schedule.every(16).minutes.do(post_tweet) #16 dakikada bir post atmak üzere ayarlandı
 
 if __name__ == "__main__":
     video_path = r"C:\Users\fıro\Desktop\bot\recep.mp4"
